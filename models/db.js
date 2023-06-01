@@ -3,15 +3,7 @@
 const mongoose = require('mongoose')
 const config = require('../config')
 
-mongoose.connect(
-  config.DB_URI,
-  { 
-    useCreateIndex: true, 
-    useUnifiedTopology: true, 
-    useNewUrlParser: true, 
-    dbName: config.DB_NAME 
-  }
-)
+mongoose.connect(config.DB_URI, { dbName: config.DB_NAME })
   
 mongoose.connection.on('error', err => { 
   console.error(`DB connection error: ${err}`)

@@ -23,11 +23,7 @@ async function initDb() {
   const mongo = await MongoMemoryServer.create()
   const url = mongo.getUri()
 
-  await mongoose.connect(url, {
-    useCreateIndex: true, 
-    useUnifiedTopology: true, 
-    useNewUrlParser: true
-  })
+  await mongoose.connect(url)
 
   return mongo
 }
