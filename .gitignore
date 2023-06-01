@@ -1,0 +1,21 @@
+# local env files
+.env.local
+.env.*.local
+.env
+
+# Log files
+npm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+node_modules
+.DS_Store
+
+# Test files
+junit/*
