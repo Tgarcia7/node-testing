@@ -58,5 +58,5 @@ $ docker-compose -f docker-compose.ci.yml run --rm api bin/integration
 # run specific group of tests
 $ docker-compose -f docker-compose.ci.yml run --rm api bin/integration path/to/files/ # e.g.: __tests__/integration/general/
 # run tests matching a pattern
-$ docker-compose -f docker-compose.ci.yml run --rm api bin/integration -g "test-description" # e.g.: "/test"
+$ docker-compose -f docker-compose.ci.yml run --rm api bin/integration -g "test-description" # e.g.: "/health"
 ```
