@@ -4,7 +4,7 @@ Simple Node.js API to demonstrate the implementation of unit and integration tes
 It just contains some routes related to `/users` which are enough to do the intended 
 implementation of the testing strategy.
 
-# Initial config 
+### Initial config 
 
 ```
 DB_URI=mongodb://mongo:27017/
@@ -12,19 +12,19 @@ DB_NAME=api-testing
 SECRET_TOKEN=3{5j*%Y*g7&G@qgr
 ```
 
-# Run
+### Run
 
 ```
 $ docker-compose up -d
 ```
 
-# Lint
+### Lint
 
 ```
 $ docker-compose --file docker-compose.ci.yml run --rm api bin/lint
 ```
 
-# Unit tests
+### Unit tests
 
 The intention of the unit tests is to test each of the components individually.
 If there is another component involved in a specific process, then a double is
@@ -40,7 +40,7 @@ $ docker-compose -f docker-compose.ci.yml run --rm api bin/unit path/to/files/ #
 $ docker-compose -f docker-compose.ci.yml run --rm api bin/unit -g "test-description" # e.g.: "Save"
 ```
 
-# Integration tests
+### Integration tests
 
 The intention of the integration tests is to interact with the API to determine
 that the flows are working as expected.
