@@ -43,5 +43,13 @@
     "nodemon": "^2.0.22",
     "sinon": "^15.1.0",
     "supertest": "^6.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tgarcia7/node-testing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tgarcia7/node-testing/issues"
+  },
+  "homepage": "https://github.com/Tgarcia7/node-testing#readme"
 }
